@@ -1,0 +1,89 @@
+
+.shop-item{
+  margin: 1em 0;
+}
+
+form{
+  display: flex;
+}
+
+input[type=text]{
+	width: 40%;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+select{
+	width: 20%;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-top: 0.5em;
+  margin-left: 1em;
+	margin-bottom: 1em;
+}
+
+
+/* Prioritetsfarver */
+.priority-low {
+  color: rgb(40, 100, 40);
+}
+
+.priority-medium {
+  color: rgb(226, 147, 0);
+}
+
+.priority-high {
+  color: rgb(162, 32, 32);
+}
+
+/* Knapstyling */
+button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button.complete {
+  background-color: gray;
+  color: white;
+}
+
+button.complete.active {
+  background-color: rgb(40, 100, 40);
+}
+
+/* Når en opgave er completed, tilføjes en streg igennem teksten */
+.completed {
+  text-decoration: line-through;
+  color: gray;  /* Du kan også vælge at gøre teksten grå for at indikere fuldført */
+}
+
+button.ongoing {
+  background-color: gray;
+  color: white;
+}
+
+button.ongoing.active {
+  background-color: rgb(226, 147, 0);
+}
+
+button.delete {
+  background-color: rgb(162, 32, 32);
+  color: white;
+}
+
+.delete-all {
+  background-color: rgb(162, 32, 32);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
